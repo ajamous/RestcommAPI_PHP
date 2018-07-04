@@ -4,7 +4,7 @@
 
 
 AUTHOR: AMEED JAMOUS
-Description: This script aims to simplify the usage of the Restcomm Curl Examples in PHP for sending SMS, Voice, Fax and other API calls
+Description: This script aims to simplify and provides a starting point to the usage of the Restcomm Curl Examples in PHP for sending SMS, Voice, Fax and other API calls
 right from your PHP script.
 
 

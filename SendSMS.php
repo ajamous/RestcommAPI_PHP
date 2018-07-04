@@ -30,7 +30,7 @@ $From = 1234567334;
 $Body = "This is a test SMS message from PHP Script using Restcomm API";
 
 $params = array(
-                'To' => §$Customer, 
+                'To' => $Customer, 
                 'From' => $From,
                 'Body' => $Body
                 

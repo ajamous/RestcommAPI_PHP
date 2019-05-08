@@ -8,6 +8,35 @@ Description: This script aims to simplify and provides a starting point to the u
 right from your PHP script.
 
 
+## CURL EXAMPLE - SEND SMS WITHOUT CALLBACK URL
+
+
+curl -X POST https://{ACCOUNT-SID}:{AUTH-TOKEN}@cloud.restcomm.com/restcomm/2012-04-24/Accounts/[ACCOUNT-SID]/SMS/Messages \
+--data-urlencode "From=15017122662" \
+--data-urlencode "Body=Hello There" \
+--data-urlencode "To=971503000001"
+
+
+<Response>
+
+ <SMSMessage>
+    <Sid>SM614919f651ef46a9833f4830b62a3844</Sid>
+    <DateCreated>Wed, 8 May 2019 10:57:45 +0000</DateCreated>
+    <DateUpdated>Wed, 8 May 2019 10:57:45 +0000</DateUpdated>
+    <DateSent/>
+    <AccountSid>AC531572e9282f68e50f80d11c635bdbd3</AccountSid>
+    <From>15017122662</From>
+    <To>971503000001</To>
+    <Body>Hello There</Body>
+    <Status>queued</Status>
+    <Direction>outbound-api</Direction>
+    <Price>0</Price>
+    <PriceUnit>USD</PriceUnit>
+    <ApiVersion>2012-04-24</ApiVersion>
+    <Uri>/2012-04-24/Accounts/AC531572e9282f68e50f80d11c635bdbd3/SMS/Messages/SM614919f651ef46a9833f4830b62a3844</Uri>
+  </SMSMessage>
+
+<Response>
 */
 
 //Restcomm Account SID

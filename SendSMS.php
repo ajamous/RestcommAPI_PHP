@@ -11,10 +11,11 @@ right from your PHP script.
 ## CURL EXAMPLE - SEND SMS WITHOUT CALLBACK URL
 
 
-curl -X POST https://{ACCOUNT-SID}:{AUTH-TOKEN}@cloud.restcomm.com/restcomm/2012-04-24/Accounts/[ACCOUNT-SID]/SMS/Messages \
---data-urlencode "From=15017122662" \
---data-urlencode "Body=Hello There" \
---data-urlencode "To=971503000001"
+curl -X POST https://cloud.restcomm.com/restcomm/2012-04-24/Accounts/AC531572e9282f68e50f80d11c635bdbd3/SMS/Messages \
+--data-urlencode "From=15017122661" \    #Sender
+--data-urlencode "Body=Hello There" \    #Message Body
+--data-urlencode "To=971503851000" \     #To Number
+-u ACCOUNTSID:AuthTOKEN    #Account SID & #AUTH TOKEN
 
 
 <Response>
@@ -24,9 +25,9 @@ curl -X POST https://{ACCOUNT-SID}:{AUTH-TOKEN}@cloud.restcomm.com/restcomm/2012
     <DateCreated>Wed, 8 May 2019 10:57:45 +0000</DateCreated>
     <DateUpdated>Wed, 8 May 2019 10:57:45 +0000</DateUpdated>
     <DateSent/>
-    <AccountSid>AC531572e9282f68e50f80d11c635bdbd3</AccountSid>
-    <From>15017122662</From>
-    <To>971503000001</To>
+    <AccountSid>AC531572e9282f68e50f80d11c6350000</AccountSid>
+    <From>15017122661</From>
+    <To>971503851000</To>
     <Body>Hello There</Body>
     <Status>queued</Status>
     <Direction>outbound-api</Direction>
